@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
 }
+body{
+    background-color: rgb(6, 1, 24);
+}
 header{
     background-color: rgb(3, 3, 14);
     height: 100px;
@@ -12,7 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 5px 100px  rgb(67, 21, 172);
+    box-shadow: 2px 1px 100px  rgb(1, 158, 233);
 }
 header h1{
     margin-left: 20px;
@@ -34,9 +37,49 @@ header li a{
     margin-right: 50px;
 }
 header li a:hover{
-background-color: blueviolet;
+background-color:rgb(1, 158, 233);
 font-weight: 700;
 padding: 10px;
 border-radius: 5%;
 transition:  0.3s;
 }
+
+/*Content*/
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 100px;
+
+    
+}
+.container>img{
+    margin: 50px;
+    box-shadow: 1px 1px 10px rgb(1, 158, 233);
+    border-radius: 5%
+}
+.text>p,h2{
+    color: aliceblue;
+    padding: 50px;
+}
+h2{
+    font-size: 2rem;
+}
+.text>p{
+    font-size: 1.5rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.consoles{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+}
+.consoles>img{
+    height: 50px;
+}
+
+
+
