@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
 }
-body{
+
+body {
     background-color: rgb(6, 1, 24);
 }
-header{
+
+header {
     background-color: rgb(3, 3, 14);
     height: 100px;
     width: auto;
@@ -15,71 +17,226 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 1px 100px  rgb(1, 158, 233);
+    box-shadow: 2px 1px 100px rgb(1, 158, 233);
 }
-header h1{
+
+header h1 {
     margin-left: 20px;
     font-size: 3rem;
+    font-weight: normal;
 }
-header ul{
+
+header ul {
     margin-right: 150px;
     display: flex;
-    
+
 }
-header li{
+
+header li {
     margin-right: 20px;
     list-style: none;
 }
-header li a{
+
+header li a {
     color: aliceblue;
+    border: solid 1px aliceblue;
+    padding: 10px;
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 50px;
+
+
 }
-header li a:hover{
-background-color:rgb(1, 158, 233);
-font-weight: 700;
-padding: 10px;
-border-radius: 5%;
-transition:  0.3s;
+
+header li a:hover {
+    background-color: rgb(1, 158, 233);
+    border: solid 1px rgb(1, 158, 233);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5%;
+    transition: 0.5s;
+
+
 }
 
 /*Content*/
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
-    margin: 200px 100px;
+    margin: 100px 50px;
 
-    
 }
-.container>img{
+
+.container>img {
     margin: 50px;
     box-shadow: 1px 1px 10px rgb(1, 158, 233);
     border-radius: 5%
 }
-.text>p,h2{
+
+.text>p,
+h2 {
     color: aliceblue;
     padding: 50px;
 }
-h2{
+
+h2 {
     font-size: 2rem;
 }
-.text>p{
+
+.text>p {
     font-size: 1.5rem;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
 }
-.consoles{
+
+.consoles {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 35px;
+    align-items: flex-start;
+    padding: 5px;
 }
-.consoles>img{
+
+.consoles>li {
+    list-style: none;
+}
+
+.consoles>li img {
     height: 50px;
+
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.two .container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.two .container h2 {
+    width: 200px;
+    padding: 25px 0;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    width: 600px;
+    grid-template-rows: repeat(3, 35px) 100px;
+
+}
+
+input {
+    width: 400px;
+    font-size: 1.5rem;
+    color: rgb(55, 24, 168);
+    padding: 10px;
+    font-weight: 500;
+}
+
+textarea {
+    font-size: 1.5rem;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    border: solid 1px aliceblue;
+    border-radius: 5%;
+    background-color: transparent;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+button:hover {
+    background-color: rgb(1, 158, 233);
+    border: solid 1px rgb(1, 158, 233);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5%;
+    transition: 0.5s
 }
 
 
 
+
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.social h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.social ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding: 0;
+
+}
+
+.social ul li {
+    list-style: none;
+
+}
+
+.social ul li a {
+    color: aliceblue;
+}
+
+.social ul li a img {
+    height: 50px;
+
+}
+.adress{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+.adress p{
+    font-size: 1rem;
+}
+footer{
+    height: 100px;
+    background-color: black;
+}
+.container2,.social{
+    margin-left: 500px;
+    margin-top: 200px;
+}
+.adress{
+    margin-top: 100px;
+}
+
+footer{
+    box-shadow: 10px -3px 100px rgb(1, 158, 233)
+}

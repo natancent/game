@@ -4,34 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gameshop-A sua loja de games</title>
+    <title>Gameshop - Sua loja de games</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Games Shop</h1>
-        <ul>
-            <li><a href="#">Sobre a loja</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre a loja</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+
     <section>
         <div class="container">
-            <img src="./images/loja.jpg" alt="Imagem da faxada da loja">
-            <div class="text"><h2>Sobre nós</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, qui recusandae. Accusamus consequuntur veritatis blanditiis? Tempore reiciendis dignissimos, iste ducimus laudantium numquam perspiciatis eaque, qui est, culpa illo magnam laboriosam?</p>
-                <div class="consoles">
-                    <img src="./images/playstation.png" alt="playstation logo">
-                    <img src="./images/nintendo.png" alt="nintendo logo">
-                    <img src="./images/xbox.png" alt="xbox logo">
-                </div>
-    </div>         
+            <img src="./images/loja.jpg" alt="Imagem da fachada da loja">
+            <div class="text">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, qui recusandae. Accusamus
+                    consequuntur veritatis blanditiis? Tempore reiciendis dignissimos, iste ducimus laudantium numquam
+                    perspiciatis eaque, qui est, culpa illo magnam laboriosam?</p>
+                <ul class="consoles">
+                    <li><img src="./images/playstation.png" alt="PlayStation logo"></li>
+                    <li><img src="./images/nintendo.png" alt="Nintendo logo"></li>
+                    <li><img src="./images/xbox.png" alt="Xbox logo"></li>
+                </ul>
+            </div>
         </div>
     </section>
+
+    <section class="two">
+        <div class="container2">
+            <h2>Contato</h2>
+            <form class="contact-form" action="contact">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Seu telefone (Opcional)">
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="social">
+            <h2>Nos acompanhe</h2>
+            <ul>
+                <li><a href="#"><img src="./images/facebook.png" alt="Facebook logo"></a></li>
+                <li><a href="#"><img src="./images/instagram.png" alt="Instagram logo"></a></li>
+                <li><a href="#"><img src="./images/youtube.png" alt="Youtube logo"></a></li>
+            </ul>
+        </div>
+
+        <div class="adress">
+            <h2>Venha até nós</h2>
+            <p>Lorem Ipsem Press: Keas 69 Str. 15234, Chalandri Athens, Greece</p>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
