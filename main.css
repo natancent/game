@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
-    background-color: black;
+    background-color: rgb(3, 3, 14);
+    font-size: 62.5%;
 }
 
 body {
-    background-color: rgb(6, 3, 17);
+    background-color: rgb(3, 3, 14);
 }
 
 header {
@@ -42,6 +43,7 @@ header li {
 header li a {
     color: aliceblue;
     border: solid 1px aliceblue;
+    border-radius: 5%;
     padding: 10px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -66,7 +68,7 @@ header li a:hover {
     align-items: center;
     gap: 30px;
     color: white;
-    background-color: rgb(13, 2, 24);
+    background-color: rgb(3, 3, 14);
 }
 .hero img{
     height: 400px;
@@ -103,7 +105,31 @@ header li a:hover {
     background-color:rgb(1, 158, 233);
     height: 350px; 
     border-radius: 5%;
+    overflow: hidden;
     
+}
+.game-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.posters a {
+    text-decoration: none;
+    color: lightgray;
+    margin-bottom: 40px;
+    padding: 0px;
+    
+}
+.posters a:hover{
+    border: 1px solid rgb(1, 158, 233) ;
+    padding: 10px;
+    border-radius: 8%;
+    transition: 0.5s;
+    color: rgb(1, 158, 233);
+}
+.posters a h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
 }
 
 
