@@ -252,8 +252,13 @@ input:focus,textarea:focus{
 footer {
     height: 100px;
     background-color: black;
+    color: white;
+    box-shadow: 10px -3px 100px rgb(1, 158, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 1.5rem
 }
 
-footer {
-    box-shadow: 10px -3px 100px rgb(1, 158, 233)
-}
