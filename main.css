@@ -22,11 +22,20 @@ header {
     box-shadow: 2px 1px 100px rgb(1, 158, 233);
 }
 
-header h1 {
+header h1 a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
     margin-left: 20px;
     font-size: 3rem;
     font-weight: normal;
     padding: 20px;
+    font-size: 4rem;
+}
+header h1 a:hover{
+    color: rgb(1, 158, 233);
+    transition: 0.5s;
+    text-decoration: underline;
 }
 
 header ul {
@@ -153,24 +162,22 @@ header li a:hover {
     justify-content: start;
     align-items: center;
     width: 600px;
-    height: 600px;
+    height: 700px;
     margin: 200px 400px;
     box-shadow: 2px 1px 100px rgb(1, 158, 233);
     padding: 10px;
-    
-}
-.wrapper h1{
-        font-size: 5rem;
-        margin-bottom: 100px;
-        margin-top: 25px;
-        color: white;
+    border-radius: 5%;
         
 }
-.wrapper p{
-    color: white;
-    margin-bottom: 150px;
-    font-size: 3rem;
+.wrapper h2{
+        font-size: 3rem;
+        margin-top: 25px;
+        color: white;
+        height: 100px;
+        font-size: 4rem;
+        
 }
+
 
 form{
     display: grid;
@@ -181,6 +188,7 @@ form{
     color: blueviolet;
     text-decoration: none;
     font-size: 3rem;
+    padding: 15px;
 
 }
 ::placeholder{
@@ -192,18 +200,22 @@ input{
     height: 50px;
     border: 1px solid rgb(1, 158, 233);
     color: rgb(241, 173, 250);
+    border-radius: 5%;
+    
 }
 textarea{
     height: 180px;
     resize: none;
     border: 1px solid rgb(1, 158, 233);
     color: rgb(241, 173, 250);
+    border-radius: 5%;
 }
 button{
     height: 50px;
     width: 130px;
     align-self: self-end;
     justify-self: center;
+    margin-top: 20px;
     border: 1px solid rgb(1, 158, 233);
     color: white;
     font-weight: 400;
@@ -212,6 +224,9 @@ button{
 }
 button:hover{
     background-color:rgb(1, 158, 233) ;
+}
+input:focus,textarea:focus{
+    outline-color: rgb(1, 158, 233);
 }
 
 
